@@ -8,9 +8,6 @@ export default function Hero() {
     <BackgroundSlideshow className="min-h-screen flex items-center justify-center">
       <div className="container mx-auto px-6 text-center text-white">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-6">
-            <Logo size="lg" variant="hero" className="mx-auto mb-4" />
-          </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Professional Tyre Services
             <span className="block text-automotive-yellow">You Can Trust</span>
