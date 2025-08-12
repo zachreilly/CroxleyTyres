@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="text-2xl font-bold mb-4 flex items-center">
-              <Logo size="sm" className="mr-2" />
+              <Logo size="sm" variant="footer" className="mr-2" />
               Croxley Tyres
             </div>
             <p className="text-gray-300 mb-4">

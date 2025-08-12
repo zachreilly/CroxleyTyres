@@ -53,7 +53,7 @@ export default function Header() {
         <nav className="py-4">
           <div className="flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold text-automotive-red flex items-center">
-              <Logo size="md" className="mr-3" />
+              <Logo size="md" variant="header" className="mr-3" />
               Croxley Tyres
             </Link>
 

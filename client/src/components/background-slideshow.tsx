@@ -49,8 +49,8 @@ export default function BackgroundSlideshow({
         ))}
       </div>
       
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      {/* Gradient Overlay for Better Text Contrast */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60" />
       
       {/* Content */}
       <div className="relative z-10">
