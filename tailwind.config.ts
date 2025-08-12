@@ -61,9 +61,9 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
-        "automotive-blue": "var(--automotive-blue)",
-        "automotive-gray": "var(--automotive-gray)",
-        "automotive-orange": "var(--automotive-orange)",
+        "automotive-red": "var(--automotive-red)",
+        "automotive-yellow": "var(--automotive-yellow)",
+        "automotive-dark-red": "var(--automotive-dark-red)",
         "light-gray": "var(--light-gray)",
       },
       fontFamily: {

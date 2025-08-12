@@ -7,37 +7,37 @@ export default function Services() {
       icon: Car,
       title: "Tyre Fitting",
       description: "Professional tyre mounting and installation with proper balancing",
-      bgColor: "bg-automotive-blue",
+      bgColor: "bg-automotive-red",
     },
     {
       icon: Scale,
       title: "Wheel Balancing",
       description: "Precision wheel balancing for smooth and safe driving",
-      bgColor: "bg-automotive-orange",
+      bgColor: "bg-automotive-yellow",
     },
     {
       icon: Search,
       title: "Tyre Inspection",
       description: "Comprehensive tyre health checks and safety assessments",
-      bgColor: "bg-automotive-blue",
+      bgColor: "bg-automotive-red",
     },
     {
       icon: Wrench,
       title: "Puncture Repair",
       description: "Quick and reliable puncture repairs to get you back on the road",
-      bgColor: "bg-automotive-orange",
+      bgColor: "bg-automotive-yellow",
     },
     {
       icon: RefreshCw,
       title: "Part Worn Tyres",
       description: "Quality pre-owned tyres at discounted prices",
-      bgColor: "bg-automotive-blue",
+      bgColor: "bg-automotive-red",
     },
     {
       icon: Clock,
       title: "Quick Service",
       description: "Fast turnaround times to minimize your downtime",
-      bgColor: "bg-automotive-orange",
+      bgColor: "bg-automotive-yellow",
     },
   ];
 
@@ -49,7 +49,7 @@ export default function Services() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-automotive-gray mb-4">Our Services</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-automotive-dark-red mb-4">Our Services</h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Complete tyre services for all your automotive needs
             </p>
@@ -66,7 +66,7 @@ export default function Services() {
                         <Icon className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-automotive-gray mb-2">
+                        <h3 className="text-lg font-semibold text-automotive-dark-red mb-2">
                           {service.title}
                         </h3>
                         <p className="text-gray-600">{service.description}</p>

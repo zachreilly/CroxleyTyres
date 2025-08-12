@@ -5,19 +5,23 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-automotive-gray text-white py-12">
+    <footer className="bg-automotive-dark-red text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="text-2xl font-bold mb-4 flex items-center">
-              <Car className="h-8 w-8 mr-2 text-automotive-orange" />
+              <img 
+                src="@assets/IMG_3344_1755015352143.jpeg" 
+                alt="Croxley Tyres" 
+                className="h-8 w-8 mr-2 rounded object-cover"
+              />
               Croxley Tyres
             </div>
             <p className="text-gray-300 mb-4">
               Professional tyre services in Croxley Green, Rickmansworth. Quality Rodex tyres with expert installation and competitive pricing.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-automotive-orange transition-colors">
+              <a href="#" className="text-gray-300 hover:text-automotive-yellow transition-colors">
                 <Facebook className="h-6 w-6" />
               </a>
             </div>
@@ -27,22 +31,22 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-automotive-orange transition-colors">
+                <Link href="/" className="text-gray-300 hover:text-automotive-yellow transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-automotive-orange transition-colors">
+                <Link href="/services" className="text-gray-300 hover:text-automotive-yellow transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/tyres" className="text-gray-300 hover:text-automotive-orange transition-colors">
+                <Link href="/tyres" className="text-gray-300 hover:text-automotive-yellow transition-colors">
                   Our Tyres
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-automotive-orange transition-colors">
+                <Link href="/contact" className="text-gray-300 hover:text-automotive-yellow transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -53,18 +57,18 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center">
-                <MapPin className="h-5 w-5 mr-3 text-automotive-orange flex-shrink-0" />
+                <MapPin className="h-5 w-5 mr-3 text-automotive-yellow flex-shrink-0" />
                 <span>174-176 New Rd, Croxley Green, Rickmansworth WD33HD</span>
               </div>
               <div className="flex items-center">
-                <Phone className="h-5 w-5 mr-3 text-automotive-orange flex-shrink-0" />
-                <a href="tel:01923710323" className="hover:text-automotive-orange transition-colors">
+                <Phone className="h-5 w-5 mr-3 text-automotive-yellow flex-shrink-0" />
+                <a href="tel:01923710323" className="hover:text-automotive-yellow transition-colors">
                   01923 710 323
                 </a>
               </div>
               <div className="flex items-center">
-                <Mail className="h-5 w-5 mr-3 text-automotive-orange flex-shrink-0" />
-                <a href="mailto:croxleytyres@gmail.com" className="hover:text-automotive-orange transition-colors">
+                <Mail className="h-5 w-5 mr-3 text-automotive-yellow flex-shrink-0" />
+                <a href="mailto:croxleytyres@gmail.com" className="hover:text-automotive-yellow transition-colors">
                   croxleytyres@gmail.com
                 </a>
               </div>

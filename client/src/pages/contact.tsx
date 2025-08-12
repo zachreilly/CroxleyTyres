@@ -21,7 +21,7 @@ export default function Contact() {
       <section className="py-16 bg-light-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-automotive-gray mb-4">Get In Touch</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-automotive-dark-red mb-4">Get In Touch</h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Contact us for tyre services, quotes, or any questions
             </p>
@@ -32,8 +32,8 @@ export default function Contact() {
             <div className="space-y-8">
               <Card className="bg-white shadow-md">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-automotive-gray mb-4 flex items-center">
-                    <MapPin className="text-automotive-blue mr-3 h-6 w-6" />
+                  <h3 className="text-xl font-semibold text-automotive-dark-red mb-4 flex items-center">
+                    <MapPin className="text-automotive-red mr-3 h-6 w-6" />
                     Our Location
                   </h3>
                   <p className="text-gray-600 text-lg">
@@ -46,13 +46,13 @@ export default function Contact() {
 
               <Card className="bg-white shadow-md">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-automotive-gray mb-4 flex items-center">
-                    <Phone className="text-automotive-blue mr-3 h-6 w-6" />
+                  <h3 className="text-xl font-semibold text-automotive-dark-red mb-4 flex items-center">
+                    <Phone className="text-automotive-red mr-3 h-6 w-6" />
                     Call Us
                   </h3>
                   <a
                     href="tel:01923710323"
-                    className="text-lg text-automotive-blue hover:text-blue-800 font-medium"
+                    className="text-lg text-automotive-red hover:text-red-800 font-medium"
                   >
                     01923 710 323
                   </a>
@@ -61,13 +61,13 @@ export default function Contact() {
 
               <Card className="bg-white shadow-md">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-automotive-gray mb-4 flex items-center">
-                    <Mail className="text-automotive-blue mr-3 h-6 w-6" />
+                  <h3 className="text-xl font-semibold text-automotive-dark-red mb-4 flex items-center">
+                    <Mail className="text-automotive-red mr-3 h-6 w-6" />
                     Email Us
                   </h3>
                   <a
                     href="mailto:croxleytyres@gmail.com"
-                    className="text-lg text-automotive-blue hover:text-blue-800 font-medium"
+                    className="text-lg text-automotive-red hover:text-red-800 font-medium"
                   >
                     croxleytyres@gmail.com
                   </a>
@@ -76,8 +76,8 @@ export default function Contact() {
 
               <Card className="bg-white shadow-md">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-automotive-gray mb-4 flex items-center">
-                    <Clock className="text-automotive-blue mr-3 h-6 w-6" />
+                  <h3 className="text-xl font-semibold text-automotive-dark-red mb-4 flex items-center">
+                    <Clock className="text-automotive-red mr-3 h-6 w-6" />
                     Opening Hours
                   </h3>
                   <div className="space-y-2 text-gray-600">

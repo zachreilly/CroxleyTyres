@@ -51,10 +51,10 @@
   --tracking-normal: 0em;
   --spacing: 0.25rem;
   
-  /* Custom automotive colors */
-  --automotive-blue: hsl(210 69% 44%);
-  --automotive-gray: hsl(0 0% 26%);
-  --automotive-orange: hsl(30 100% 50%);
+  /* Custom automotive colors - Red and Yellow theme */
+  --automotive-red: hsl(0 85% 45%);
+  --automotive-yellow: hsl(50 100% 50%);
+  --automotive-dark-red: hsl(0 70% 35%);
   --light-gray: hsl(0 0% 98%);
 }
 
@@ -104,10 +104,10 @@
   --shadow-xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 8px 10px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
   --shadow-2xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);
   
-  /* Custom automotive colors for dark mode */
-  --automotive-blue: hsl(210 69% 54%);
-  --automotive-gray: hsl(0 0% 36%);
-  --automotive-orange: hsl(30 100% 60%);
+  /* Custom automotive colors for dark mode - Red and Yellow theme */
+  --automotive-red: hsl(0 85% 55%);
+  --automotive-yellow: hsl(50 100% 60%);
+  --automotive-dark-red: hsl(0 70% 45%);
   --light-gray: hsl(0 0% 8%);
 }
 
@@ -126,47 +126,47 @@
 }
 
 @layer utilities {
-  .text-automotive-blue {
-    color: var(--automotive-blue);
+  .text-automotive-red {
+    color: var(--automotive-red);
   }
   
-  .text-automotive-gray {
-    color: var(--automotive-gray);
+  .text-automotive-yellow {
+    color: var(--automotive-yellow);
   }
   
-  .text-automotive-orange {
-    color: var(--automotive-orange);
+  .text-automotive-dark-red {
+    color: var(--automotive-dark-red);
   }
   
-  .bg-automotive-blue {
-    background-color: var(--automotive-blue);
+  .bg-automotive-red {
+    background-color: var(--automotive-red);
   }
   
-  .bg-automotive-gray {
-    background-color: var(--automotive-gray);
+  .bg-automotive-yellow {
+    background-color: var(--automotive-yellow);
   }
   
-  .bg-automotive-orange {
-    background-color: var(--automotive-orange);
+  .bg-automotive-dark-red {
+    background-color: var(--automotive-dark-red);
   }
   
   .bg-light-gray {
     background-color: var(--light-gray);
   }
   
-  .border-automotive-blue {
-    border-color: var(--automotive-blue);
+  .border-automotive-red {
+    border-color: var(--automotive-red);
   }
   
-  .hover\:bg-automotive-blue:hover {
-    background-color: var(--automotive-blue);
+  .hover\:bg-automotive-red:hover {
+    background-color: var(--automotive-red);
   }
   
-  .hover\:text-automotive-blue:hover {
-    color: var(--automotive-blue);
+  .hover\:text-automotive-red:hover {
+    color: var(--automotive-red);
   }
   
-  .hover\:text-automotive-orange:hover {
-    color: var(--automotive-orange);
+  .hover\:text-automotive-yellow:hover {
+    color: var(--automotive-yellow);
   }
 }

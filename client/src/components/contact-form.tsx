@@ -59,14 +59,14 @@ export default function ContactForm() {
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <Send className="h-8 w-8 text-green-600" />
           </div>
-          <h3 className="text-xl font-semibold text-automotive-gray mb-4">Thank You!</h3>
+          <h3 className="text-xl font-semibold text-automotive-dark-red mb-4">Thank You!</h3>
           <p className="text-gray-600 mb-6">
             Your message has been sent successfully. We'll get back to you soon.
           </p>
           <Button
             onClick={() => setIsSubmitted(false)}
             variant="outline"
-            className="border-automotive-blue text-automotive-blue hover:bg-automotive-blue hover:text-white"
+            className="border-automotive-red text-automotive-red hover:bg-automotive-red hover:text-white"
           >
             Send Another Message
           </Button>
@@ -78,7 +78,7 @@ export default function ContactForm() {
   return (
     <Card className="bg-white shadow-md">
       <CardContent className="p-8">
-        <h3 className="text-xl font-semibold text-automotive-gray mb-6">Send us a message</h3>
+        <h3 className="text-xl font-semibold text-automotive-dark-red mb-6">Send us a message</h3>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <div>
             <Label htmlFor="name" className="text-sm font-medium text-gray-700">
@@ -147,7 +147,7 @@ export default function ContactForm() {
           <Button
             type="submit"
             disabled={contactMutation.isPending}
-            className="w-full bg-automotive-blue hover:bg-blue-800 text-white px-8 py-4 text-lg"
+            className="w-full bg-automotive-red hover:bg-red-800 text-white px-8 py-4 text-lg"
           >
             {contactMutation.isPending ? (
               <>

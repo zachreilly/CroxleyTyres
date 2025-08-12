@@ -2,11 +2,12 @@
 
 ## Overview
 
-This is a full-stack web application for Croxley Tyres, a tyre service business located in Rickmansworth. The application serves as a business website featuring information about their services, tyre products, and a contact form for customer inquiries. The site showcases their Rodex mid-range tyres, professional installation services, and competitive pricing for both new and part-worn tyres.
+This is a full-stack web application for Croxley Tyres, a tyre service business located in Rickmansworth. The application serves as a business website featuring information about their services, tyre products, and a contact form for customer inquiries. The site showcases their Rodex mid-range tyres, professional installation services, and competitive pricing for both new and part-worn tyres. The website now features a red and yellow color scheme with integrated business photos and logo.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design preferences: Red and yellow color scheme, business photos integrated throughout the site.
 
 ## System Architecture
 
@@ -16,9 +17,9 @@ Preferred communication style: Simple, everyday language.
 - **UI Framework**: shadcn/ui components built on Radix UI primitives with Tailwind CSS for styling
 - **State Management**: TanStack Query for server state management and API calls
 - **Form Handling**: React Hook Form with Zod validation for type-safe form validation
-- **Styling**: Tailwind CSS with custom automotive-themed color scheme and design system
+- **Styling**: Tailwind CSS with custom red and yellow automotive color scheme, integrated business photography, and responsive design system
 
-The frontend follows a component-based architecture with pages for Home, Services, Tyres showcase, and Contact. The design uses a professional automotive color palette with blues and oranges, optimized for mobile-first responsive design.
+The frontend follows a component-based architecture with pages for Home (including gallery section), Services, Tyres showcase, and Contact. The design uses a professional automotive color palette with red and yellow branding, integrated business photography, and mobile-first responsive design.
 
 ### Backend Architecture
 - **Runtime**: Node.js with Express.js framework
