@@ -1,6 +1,7 @@
 import Hero from "@/components/hero";
 import Features from "@/components/features";
 import { Card, CardContent } from "@/components/ui/card";
+import BackgroundSlideshow from "@/components/background-slideshow";
 
 export default function Home() {
   return (
@@ -10,50 +11,18 @@ export default function Home() {
       <Hero />
       <Features />
       
-      {/* Gallery Section */}
-      <section className="py-16 bg-light-gray">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-automotive-dark-red mb-4">
-              Our Workshop
+      {/* Workshop Slideshow Section */}
+      <section className="py-0">
+        <BackgroundSlideshow className="h-96 flex items-center justify-center" interval={4000}>
+          <div className="text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Our Professional Workshop
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Professional facilities and quality service you can trust
+            <p className="text-xl text-red-100 max-w-2xl mx-auto">
+              State-of-the-art facilities and expert technicians ensuring quality service
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <CardContent className="p-0">
-                <img 
-                  src="@assets/IMG_3343_1755015352143.jpeg" 
-                  alt="Croxley Tyres Workshop - Professional tyre fitting equipment"
-                  className="w-full h-64 object-cover"
-                />
-              </CardContent>
-            </Card>
-            
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <CardContent className="p-0">
-                <img 
-                  src="@assets/IMG_3349_1755015352143.jpeg" 
-                  alt="Croxley Tyres - Quality tyres and professional service"
-                  className="w-full h-64 object-cover"
-                />
-              </CardContent>
-            </Card>
-            
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow md:col-span-2 lg:col-span-1">
-              <CardContent className="p-0">
-                <img 
-                  src="@assets/IMG_3342_1755015352143.jpeg" 
-                  alt="Croxley Tyres storefront - Located in Croxley Green, Rickmansworth"
-                  className="w-full h-64 object-cover"
-                />
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+        </BackgroundSlideshow>
       </section>
     </>
   );

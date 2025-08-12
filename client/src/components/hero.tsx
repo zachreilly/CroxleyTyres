@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Car, MapPin } from "lucide-react";
+import BackgroundSlideshow from "./background-slideshow";
 
 export default function Hero() {
   return (
-    <section className="relative bg-automotive-red text-white py-20">
-      <div className="absolute inset-0 bg-gradient-to-r from-automotive-red to-automotive-dark-red opacity-90"></div>
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+    <BackgroundSlideshow className="min-h-screen flex items-center justify-center">
+      <div className="container mx-auto px-6 text-center text-white">
+        <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Professional Tyre Services
             <span className="block text-automotive-yellow">You Can Trust</span>
@@ -50,6 +50,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </BackgroundSlideshow>
   );
 }

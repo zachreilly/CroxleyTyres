@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Car, Scale, Search, Wrench, RefreshCw, Clock } from "lucide-react";
+import BackgroundSlideshow from "@/components/background-slideshow";
 
 export default function Services() {
   const services = [
@@ -45,6 +46,18 @@ export default function Services() {
     <>
       <title>Tyre Services - Croxley Tyres | Professional Installation & Repair</title>
       <meta name="description" content="Complete tyre services at Croxley Tyres: fitting, balancing, inspection, puncture repair, and part worn tyres. Expert service in Rickmansworth." />
+      
+      {/* Services Header with Slideshow */}
+      <BackgroundSlideshow className="h-80 flex items-center justify-center" interval={6000}>
+        <div className="text-center text-white">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Professional Tyre Services
+          </h1>
+          <p className="text-xl text-red-100 max-w-3xl mx-auto">
+            Expert fitting, repairs, and maintenance for all your tyre needs in Rickmansworth
+          </p>
+        </div>
+      </BackgroundSlideshow>
       
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">

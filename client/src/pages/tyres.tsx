@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Car, Phone } from "lucide-react";
+import BackgroundSlideshow from "@/components/background-slideshow";
 
 export default function Tyres() {
   const tyres = [
@@ -30,6 +31,18 @@ export default function Tyres() {
     <>
       <title>Rodex Tyres - Croxley Tyres | Mid-Range Performance Tyres</title>
       <meta name="description" content="Quality Rodex mid-range tyres available at Croxley Tyres. Various sizes from £66-£80. Part worn tyres also available at discounted prices." />
+      
+      {/* Tyres Header with Slideshow */}
+      <BackgroundSlideshow className="h-80 flex items-center justify-center" interval={7000}>
+        <div className="text-center text-white">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Quality Rodex Tyres
+          </h1>
+          <p className="text-xl text-red-100 max-w-3xl mx-auto">
+            Mid-range performance tyres from £66 - Professional fitting included
+          </p>
+        </div>
+      </BackgroundSlideshow>
       
       <section className="py-16 bg-light-gray">
         <div className="container mx-auto px-4">
