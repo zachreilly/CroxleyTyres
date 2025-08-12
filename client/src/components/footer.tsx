@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Car, MapPin, Phone, Mail, Facebook } from "lucide-react";
+import { Car, MapPin, Phone, Mail, Facebook, ExternalLink } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -56,9 +56,21 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-3 text-gray-300">
-              <div className="flex items-center">
-                <MapPin className="h-5 w-5 mr-3 text-automotive-yellow flex-shrink-0" />
-                <span>174-176 New Rd, Croxley Green, Rickmansworth WD33HD</span>
+              <div className="flex items-start">
+                <MapPin className="h-5 w-5 mr-3 text-automotive-yellow flex-shrink-0 mt-0.5" />
+                <div>
+                  <span>174-176 New Rd, Croxley Green, Rickmansworth WD33HD</span>
+                  <br />
+                  <a
+                    href="https://www.google.com/maps/dir//174-176+New+Rd,+Croxley+Green,+Rickmansworth+WD3+3HD,+UK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-automotive-yellow hover:text-yellow-300 transition-colors inline-flex items-center mt-1"
+                  >
+                    Get Directions
+                    <ExternalLink className="h-3 w-3 ml-1" />
+                  </a>
+                </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-automotive-yellow flex-shrink-0" />

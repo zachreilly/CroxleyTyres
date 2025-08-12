@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Car } from "lucide-react";
+import { Phone, Car, MapPin } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -36,6 +36,17 @@ export default function Hero() {
                 View Our Tyres
               </a>
             </Button>
+          </div>
+          <div className="mt-6 text-center">
+            <a
+              href="https://www.google.com/maps/dir//174-176+New+Rd,+Croxley+Green,+Rickmansworth+WD3+3HD,+UK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-red-100 hover:text-automotive-yellow transition-colors text-lg"
+            >
+              <MapPin className="mr-2 h-5 w-5" />
+              174-176 New Rd, Croxley Green - Get Directions
+            </a>
           </div>
         </div>
       </div>
