@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Car, MapPin, Phone, Mail, Facebook, ExternalLink } from "lucide-react";
+import Logo from "./logo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,11 +11,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="text-2xl font-bold mb-4 flex items-center">
-              <img 
-                src="@assets/IMG_3344_1755015352143.jpeg" 
-                alt="Croxley Tyres" 
-                className="h-8 w-8 mr-2 rounded object-cover"
-              />
+              <Logo size="sm" className="mr-2" />
               Croxley Tyres
             </div>
             <p className="text-gray-300 mb-4">

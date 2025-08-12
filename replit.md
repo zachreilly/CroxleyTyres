@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack web application for Croxley Tyres, a tyre service business located in Rickmansworth. The application serves as a business website featuring information about their services, tyre products, and a contact form for customer inquiries. The site showcases their Rodex mid-range tyres, professional installation services, and competitive pricing for both new and part-worn tyres. The website now features a red and yellow color scheme with integrated business photos and logo.
+This is a full-stack web application for Croxley Tyres, a tyre service business located in Rickmansworth. The application serves as a business website featuring information about their services, tyre products, and a contact form for customer inquiries. The site showcases their Rodex mid-range tyres, professional installation services, and competitive pricing for both new and part-worn tyres. The website features a red and yellow color scheme with integrated business photos displayed as dynamic background slideshows throughout the site, plus the business logo prominently displayed in the header, footer, and hero section.
 
 ## User Preferences
 

@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone, Mail, Clock, Car } from "lucide-react";
+import Logo from "./logo";
 
 export default function Header() {
   const [location] = useLocation();
@@ -52,11 +53,7 @@ export default function Header() {
         <nav className="py-4">
           <div className="flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold text-automotive-red flex items-center">
-              <img 
-                src="@assets/IMG_3342_1755015352143.jpeg" 
-                alt="Croxley Tyres Logo" 
-                className="h-12 w-12 mr-3 rounded-full object-cover"
-              />
+              <Logo size="md" className="mr-3" />
               Croxley Tyres
             </Link>
 
