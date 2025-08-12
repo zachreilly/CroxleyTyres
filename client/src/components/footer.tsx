@@ -89,6 +89,17 @@ export default function Footer() {
           <p className="text-gray-300">
             &copy; {currentYear} Croxley Tyres. All rights reserved. | Professional tyre services in Rickmansworth
           </p>
+          <p className="text-gray-400 text-xs mt-2">
+            Made by{" "}
+            <a 
+              href="https://wrwebsites.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-automotive-yellow transition-colors"
+            >
+              wrwebsites.com
+            </a>
+          </p>
         </div>
       </div>
     </footer>
