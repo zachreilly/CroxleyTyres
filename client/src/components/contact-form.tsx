@@ -28,7 +28,7 @@ export default function ContactForm() {
 
   const contactMutation = useMutation({
     mutationFn: async (data: InsertContactMessage) => {
-      const response = await apiRequest("POST", "/api/contact", data);
+      const response = await apiRequest("POST", "/contact.php", data);
       return response.json();
     },
     onSuccess: (data) => {

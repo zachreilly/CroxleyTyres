@@ -1,0 +1,43 @@
+# Builds the site and uploads it to Namecheap every time code is pushed to main.
+# Needs these repo secrets (Settings → Secrets and variables → Actions):
+#   FTP_SERVER    FTP server from cPanel → FTP Accounts (e.g. ftp.yourdomain.co.uk)
+#   FTP_USERNAME  cPanel FTP username
+#   FTP_PASSWORD  cPanel FTP password
+#   FTP_DIR       (optional) folder to upload into; defaults to public_html/
+
+name: Build and deploy to Namecheap
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # adds a "Run workflow" button in the Actions tab
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install packages
+        run: npm install --no-audit --no-fund
+
+      - name: Build site
+        run: npm run build
+
+      - name: Upload to Namecheap
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_DIR || 'public_html/' }}
